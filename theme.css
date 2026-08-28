@@ -1,4 +1,67 @@
 body {
+	--font-text-theme: 'Segoe UI', sans-serif;
+	--font-text-size: 13px;
+
+    --font-size-normal:              0.9em;
+    --font-size-preview:             1.0em; 
+    --font-size-code:                0.9em;
+    --font-size-side-dock:           0.9em;
+    --font-size-side-dock-title:     0.95em;
+    --font-size-status-bar:          0.85em;
+    --font-size-h1:                  1.4em;
+    --font-size-h2:                  1.3em;
+    --font-size-h3:                  1.2em;
+    --font-size-h4:                  1.15em;
+    --font-size-h5:                  1.1em;
+    --font-size-h6:                  1.08em;
+
+
+	/* normal text outside of headings and code of editor */
+	.cm-s-obsidian, .mod-single-child .cm-s-obsidian {
+		font-size: var(--font-size-normal);
+	}
+
+	/* normal text outside of headings and code of preview */
+	.markdown-preview-view, .mod-single-child .markdown-preview-view {
+		font-size: var(--font-size-preview);
+	}
+
+	/* headings for editor and preview */
+	.HyperMD-header .cm-header-1, .markdown-preview-view h1
+	{
+		font-size: var(--font-size-h1) !important;
+		font-weight: var(--font-bold);
+	}
+
+	.HyperMD-header .cm-header-2, .markdown-preview-view h2
+	{
+		font-size: var(--font-size-h2) !important;
+		font-weight: var(--font-medium)
+	}
+
+	.HyperMD-header .cm-header-3, .markdown-preview-view h3
+	{
+		font-size: var(--font-size-h3) !important;
+	}
+
+	.HyperMD-header .cm-header-4, .markdown-preview-view h4
+	{
+		font-size: var(--font-size-h4) !important;
+		color: #777777;
+	}
+
+	.HyperMD-header .cm-header-5, .markdown-preview-view h5
+	{
+		font-size: var(--font-size-h5) !important;
+	}
+
+	.HyperMD-header .cm-header-6, .markdown-preview-view h6
+	{
+		font-size: var(--font-size-h6) important;
+	}
+
+
+
 	--radius-s: 0px;
 	--radius-m: 0px;
 	--radius-l: 0px;
